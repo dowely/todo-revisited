@@ -1,0 +1,20 @@
+{
+  "name": "todo-revisit",
+  "version": "1.0.0",
+  "description": "Basic full stack practice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/dowely/todo-revisit"
+  },
+  "keywords": [
+    "todo",
+    "server",
+    "database"
+  ],
+  "author": "Marcin Ogar",
+  "license": "ISC"
+}
