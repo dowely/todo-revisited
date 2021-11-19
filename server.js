@@ -8,9 +8,13 @@ let db
 
 const connectionString = `mongodb+srv://admin:${process.env.DB_PASS}@cluster0.urekp.mongodb.net/TodoApp?retryWrites=true&w=majority`
 
+let port = process.env.PORT
+
+if(port == null || port == "") port = 3000
+
 mongodb.connect(connectionString, {useNewUrlParser: true}, (err, client) => {
   db = client.db()
-  app.listen(3000)
+  app.listen(port)
 })
 
 app.use(express.json())
